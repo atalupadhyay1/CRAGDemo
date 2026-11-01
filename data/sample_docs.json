@@ -1,0 +1,50 @@
+[
+  {
+    "id": "KB-001",
+    "title": "Agentic RAG overview",
+    "source": "Knowledge base",
+    "content": "Retrieval-augmented generation (RAG) answers a question by retrieving relevant source passages and using them as context for a response. An agentic RAG system can inspect evidence quality, reformulate a query, and select tools before answering. The final response should distinguish sourced facts from unsupported claims."
+  },
+  {
+    "id": "KB-002",
+    "title": "Vector retrieval and chunking",
+    "source": "Knowledge base",
+    "content": "A vector store represents documents and a query as numeric vectors. Similarity search ranks passages by distance or cosine similarity. A hybrid retriever can combine semantic similarity with keyword overlap. Chunking documents into short passages helps return focused evidence, while stable document IDs make citations auditable."
+  },
+  {
+    "id": "KB-003",
+    "title": "The corrective retrieval loop",
+    "source": "Knowledge base",
+    "content": "A corrective RAG loop checks whether retrieved passages directly support the question. If results are weak, it rewrites the query and retries local retrieval. If local evidence remains insufficient, it can invoke web search for an external source. If neither source produces evidence, the agent should say it cannot confirm the claim."
+  },
+  {
+    "id": "KB-004",
+    "title": "Grounding, citations, and safe responses",
+    "source": "Knowledge base",
+    "content": "A grounded answer should be supported by retrieved passages or verified tool output. Cite the source document or web result used for each claim. If the retrieved context does not verify an answer, state that it cannot be confirmed from the available context instead of filling gaps with guesses. A citation should identify a real indexed document or returned URL."
+  },
+  {
+    "id": "KB-005",
+    "title": "Structured tool calling",
+    "source": "Knowledge base",
+    "content": "A structured tool call has a registered name, a description, and a JSON parameter schema. Validate required fields and parameter types before execution, then return a typed result that can be included in the agent trace. A calculator should accept only a restricted arithmetic grammar; it must not evaluate arbitrary code."
+  },
+  {
+    "id": "KB-006",
+    "title": "CRAG Demo runtime and search configuration",
+    "source": "Knowledge base",
+    "content": "The CRAG Demo runs a deterministic local retrieval pipeline using feature-hashed TF-IDF-style vectors and a lexical overlap signal; it does not require a hosted language model. The bundled knowledge base is indexed at startup, and uploaded plain-text or Markdown documents are persisted locally in data/user_documents.json. Live web search uses the Tavily API only when TAVILY_API_KEY is configured. Without that key, a time-sensitive claim cannot be verified by this demo."
+  },
+  {
+    "id": "KB-007",
+    "title": "Safe direct calculations",
+    "source": "Knowledge base",
+    "content": "For arithmetic questions, a calculator tool can parse an expression into a restricted syntax tree and allow only numeric constants, parentheses, unary signs, and basic arithmetic operators. It should limit exponent size and numeric range, reject all other syntax, and return the computed value as a tool result."
+  },
+  {
+    "id": "KB-008",
+    "title": "Document ingestion and evidence quality",
+    "source": "Knowledge base",
+    "content": "When adding a document to a retrieval system, preserve its title and a stable source ID. Split long text into passages that retain sentence boundaries where possible, and keep enough overlap to avoid losing context at chunk edges. Retrieval scores are ranking signals rather than proof; the agent should still check whether the passage actually addresses the question."
+  }
+]

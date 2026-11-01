@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+data/user_documents.json
+data/user_documents.json.tmp
+.DS_Store
