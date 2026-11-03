@@ -23,6 +23,11 @@ Then open <http://localhost:8000>. To use another port, set `PORT=9000` or pass 
 
 The included corpus is a small set of RAG/CRAG notes intended for exercising the demo, not a general-purpose knowledge base.
 
+## Learning material
+
+- [Agentic AI master course](AgenticAI/README.md) — progressive lessons from foundations through production multi-agent systems, with runnable labs.
+- [1Z0-1157-26 practice test](practice_tests/1Z0-1157-26-practice-test.md) — original questions and a separate [answer key](practice_tests/1Z0-1157-26-answer-key.md).
+
 ## Test
 
 ```bash
