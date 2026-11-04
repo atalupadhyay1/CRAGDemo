@@ -27,6 +27,7 @@ The included corpus is a small set of RAG/CRAG notes intended for exercising the
 
 - [Agentic AI master course](AgenticAI/README.md) — progressive lessons from foundations through production multi-agent systems, with runnable labs.
 - [1Z0-1157-26 practice test](practice_tests/1Z0-1157-26-practice-test.md) — original questions and a separate [answer key](practice_tests/1Z0-1157-26-answer-key.md).
+- [Forward Deployed Engineer practice test](practice_tests/forward-deployed-engineer-practice-test.md) — role-readiness questions with a separate [answer key](practice_tests/forward-deployed-engineer-answer-key.md).
 
 ## Test
 
