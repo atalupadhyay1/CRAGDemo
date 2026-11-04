@@ -23,6 +23,13 @@ Then open <http://localhost:8000>. To use another port, set `PORT=9000` or pass 
 
 The included corpus is a small set of RAG/CRAG notes intended for exercising the demo, not a general-purpose knowledge base.
 
+## Learning material
+
+- [Agentic AI master course](AgenticAI/README.md) — progressive lessons from foundations through production multi-agent systems, with runnable labs.
+- [1Z0-1157-26 practice test](practice_tests/1Z0-1157-26-practice-test.md) — original questions and a separate [answer key](practice_tests/1Z0-1157-26-answer-key.md).
+- [Forward Deployed Engineer practice test](practice_tests/forward-deployed-engineer-practice-test.md) — 40-question role-readiness set with a separate [answer key](practice_tests/forward-deployed-engineer-answer-key.md).
+- [FDE six-set practice suite](practice_tests/fde-6-set-suite/README.md) — six original 100-question sets with separate explanations and answer keys, mapped to the Udemy course's public topic outline.
+
 ## Test
 
 ```bash
